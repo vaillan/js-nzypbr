@@ -2,7 +2,7 @@
 import './style.css';
 
 //Variables globales
-let token = "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"
+let token = "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"
 let clientXMLHttpRequest = new XMLHttpRequest();
 
 /**
@@ -42,7 +42,7 @@ let clientXMLHttpRequest = new XMLHttpRequest();
 function getUser() {
   let url = "https://api.github.com/users";
   let method = "GET";
-  get(url, method, token);
+  request(url, method, token);
 }
 
 
@@ -50,4 +50,4 @@ function onInit() {
   getUser();
 }
 
-//onInit();
+onInit();
